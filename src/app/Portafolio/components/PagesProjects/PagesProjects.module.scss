@@ -1,0 +1,34 @@
+.pages_projects {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  .Header__of__Page{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(80, 80, 80, 0.533);
+    align-items: center;
+    padding: 0px 14px;  
+    .ImgPerfil{
+        border-radius: 50%;
+    }
+    h3{
+      padding-left: 20px;  
+    }
+  }
+  .lorem__infoETC{
+    background-color: green;
+    width: 100%;
+    height: 70%;
+    padding: 5px 10px;
+    p{
+      font-size: 14px;
+    }
+    button{
+      width: calc(100% - 20px);
+      margin: 5px 10px;
+    }
+  }
+}

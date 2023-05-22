@@ -1,0 +1,1 @@
+export { default as PagesProjects } from './PagesProjects';
