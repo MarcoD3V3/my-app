@@ -178,13 +178,13 @@ export default function Home() {
             
           
           </div>
-        <aside className={styles.sidebar__Principal}>
+        <div className={styles.sidebar__Principal}>
           <div className={styles.LiveDemo__Tittle}><h1>Live Demo</h1></div>
           <br />
           <div className={styles.sidebar__Container}>
             
           </div>
-        </aside>
+        </div>
         </div>
       </div>
     </div>
