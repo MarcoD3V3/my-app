@@ -1,0 +1,63 @@
+.quizzersCard {
+  width:calc(20% - 20px);
+  min-height:200px;
+  height: fit-content;
+  padding: 6px;
+  border-radius: 8px;
+  gap: 20px;
+  .QuizzersCard__Container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    .Tittle__QuizzersCard{
+      width: 100%;
+      min-height: 30px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      padding: 5px 3px;
+      border-radius: 5px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .img__QuizzersCard{
+      width: 100%;
+      background-color: #525252;
+      border-radius: 8px;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .lorem__QuizzersCard{
+      width: 100%;
+      min-height: 40px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #383838bf; 
+      padding: 5px 5px 8px 5px ;
+      border-radius: 8px;
+      gap: 10px;
+      p{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        text-overflow: ellipsis;
+        font-size: 11px;
+      }
+      button{
+        width: calc(50% - 10px);
+        height: 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

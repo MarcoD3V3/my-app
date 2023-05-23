@@ -83,7 +83,8 @@
 .main__children__body{
   padding: 70px 10px 10px 10px;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
+  height: auto;
 }
 
 

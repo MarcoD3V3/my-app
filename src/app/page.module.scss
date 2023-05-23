@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:wght@500&display=swap');
+.Home{
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  // background-color : #9995;
+  .Home__Container{
+    width: 100%;
+    height: auto;
+    background-color: #8885;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    .Container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      .page__Principal{
+        width: 80%;
+        height: auto;
+        background-color: #7772;
+        border-radius: 5px 8px 8px 5px;
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .sidebar__Principal{
+        background-color: #5b5b5b85;
+        width: calc(20% - 15px);
+        height: 100%23rem;
+        border-radius: 10px;
+        position: relative;
+        .LiveDemo__Tittle{
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: .67rem;
+          // background-color: #fff3;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          h1{
+            font-family: 'Pangolin';
+            font-weight: 900;
+            font-size: 34px;
+            color: #ffffff7e;
+            text-shadow: 4px 4px 8px #343434c1;
+          }
+        }
+        .sidebar__Container{
+          background-color: #8888;
+          width: calc(100% - 14px);
+          height: 20rem;
+          border-radius: 10px;
+          margin: 7px;
+        }
+      }
+    }
+  }
+}
