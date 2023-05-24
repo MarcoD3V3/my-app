@@ -14,7 +14,7 @@
     .Tittle__QuizzersCard{
       width: 100%;
       min-height: 30px;
-      height: auto;
+      height: 45px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -29,6 +29,9 @@
       background-color: #525252;
       border-radius: 8px;
       height: auto;
+      overflow: hidden;
+      max-height: 160px;
+      min-height: 140px;
       padding: 10px;
       display: flex;
       justify-content: center;

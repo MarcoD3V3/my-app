@@ -1,7 +1,8 @@
-
+"use client"
 import Image from 'next/image'
 import styles from './page.module.scss'
 import {QuizzersCard} from '../components/QuizzersCard/index'
+
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         <div className={styles.Container}>
           <div className={styles.page__Principal}>
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
+            Tittle='Como aprender "Html"?'
             imgURL="/html.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
@@ -21,8 +22,8 @@ export default function Home() {
             bgcColorBox="#9997"
             />
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
-            imgURL="/html.png"
+            Tittle='Como aprender "CSS"?'
+            imgURL="/css.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
             buttonNameInfo="Info"
@@ -32,8 +33,8 @@ export default function Home() {
             bgcColorBox="#4447"
             />
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
-            imgURL="/html.png"
+            Tittle='Como aprender "JavaScript"?'
+            imgURL="/js.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
             buttonNameInfo="Info"
@@ -43,8 +44,8 @@ export default function Home() {
             bgcColorBox="#8883"
             />
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
-            imgURL="/html.png"
+            Tittle='Como aprender a programar "Python"?'
+            imgURL="/python.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
             buttonNameInfo="Info"
@@ -54,8 +55,8 @@ export default function Home() {
             bgcColorBox="#8883"
             />
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
-            imgURL="/html.png"
+            Tittle='Como aprender a programar "PHP"?'
+            imgURL="/php.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
             buttonNameInfo="Info"
@@ -65,8 +66,8 @@ export default function Home() {
             bgcColorBox="#8883"
             />
             <QuizzersCard 
-            Tittle='Como aprender a programar "Html"?'
-            imgURL="/html.png"
+            Tittle='Como aprender a programar "MySql"?'
+            imgURL="/mysql.png"
             imgALT="Html logo para cards"
             Lorem="marco es una persona muy empoderada y trabajadora que se emplea basicamente en los centros de el estado del peru (Peru, Lima)  mas exacto en el distrito de Comas (Comas, Lima, Peru)"
             buttonNameInfo="Info"
@@ -181,6 +182,8 @@ export default function Home() {
         <div className={styles.sidebar__Principal}>
           <div className={styles.LiveDemo__Tittle}><h1>Live Demo</h1></div>
           <br />
+          
+          <br />
           <div className={styles.sidebar__Container}>
             
           </div>
@@ -190,3 +193,4 @@ export default function Home() {
     </div>
   );
 }
+

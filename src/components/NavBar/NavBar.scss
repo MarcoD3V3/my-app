@@ -7,73 +7,93 @@
   header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 6px 12px;
-    .div__logo__navbar{
-      img{
-        animation-name: img_logo_navbar;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-      }
-    }
-    .div__ul__links{
+    nav{
+      width: 100%;
+      height: 60px;
       display: flex;
-      .ul__links{
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 12px;
+      .div__logo__navbar{
+        img{
+          animation-name: img_logo_navbar;
+          animation-duration: 2s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+        }
+        }
+      .div__container__barSearch{
+        background-color: #8881;
+        width: auto;
+        height: auto;
         display: flex;
-        list-style: none;
-        .links{
-          font-family:sans-serif;
-          font-weight: 500;
-          padding: 2px 5px;
-          
-          animation-name: img_s;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-           animation-iteration-count: infinite;
-           @keyframes img_s {
-            0% {
-              rotate: (0deg);
-            }
-            25% {
-              rotate: (5deg);
-            }
-            50% {
-              rotate: (0deg);
-            }
-            75%{
-              rotate: (-5deg);
-            }
-            100%{
-              rotate: (0deg);
-            }
-          }
-
-
-          .Links__route{
-            transition: all 350ms;
-            color: #ffffff7e;
+        justify-content: center;
+        align-items: center;
+        input{
+          width: 300px;
+          padding: 8px;
+          height: 26px;
+          outline: none;
+          border-radius: 10px;
+          color: rgba(226, 226, 226, 0.467);
+        }
+      }
+      .div__ul__links{
+        display: flex;
+        .ul__links{
+          display: flex;
+          list-style: none;
+          .links{
+            font-family:sans-serif;
             font-weight: 500;
-
-            &:hover{
-              color: #ffffffe1;
+            padding: 2px 5px;
+            
+            animation-name: img_s;
+              animation-duration: 1s;
+              animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            @keyframes img_s {
+              0% {
+                rotate: (0deg);
+              }
+              25% {
+                rotate: (5deg);
+              }
+              50% {
+                rotate: (0deg);
+              }
+              75%{
+                rotate: (-5deg);
+              }
+              100%{
+                rotate: (0deg);
+              }
+            }
+  
+  
+            .Links__route{
+              transition: all 350ms;
+              color: #ffffff7e;
+              font-weight: 500;
+    
+              &:hover{
+                color: #ffffffe1;
+              }
             }
           }
         }
       }
     }
   }
-}
-@keyframes img_logo_navbar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.90);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes img_logo_navbar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.90);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
