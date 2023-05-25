@@ -1,0 +1,17 @@
+.photosApi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  .card{
+    background-color: #595959a2;
+    width: calc(25% - 10px) ;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

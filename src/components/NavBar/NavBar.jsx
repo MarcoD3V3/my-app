@@ -28,13 +28,6 @@ const Links_Page = [
 
 function NavBar (){
 
-		const inputRef = useRef('');
-	
-		function handleClick() {
-			const value1 = inputRef.current.value;
-			alert(value1);
-		}
-
 
 
 	// const [value, setValue] = useState('');
@@ -57,14 +50,6 @@ function NavBar (){
 					width={40} 
 					height={40}
 					/>
-				</div>
-				<div className='div__container__barSearch'>
-					<input 
-					type="text" 
-					ref={inputRef} 
-					placeholder='Search...' 
-					autoComplete='false' 
-					onSubmit={handleClick} />
 				</div>
 				<div className='div__ul__links'>
 					<ul className='ul__links'>

@@ -27,6 +27,15 @@ export default function Portafolio() {
 						nameButton="perfiles"
 						routeButton="Portafolio/GameTyping"
 						/>
+
+						<PagesProjects
+						name="API - Tragos"
+						img="https://www.dumpaday.com/wp-content/uploads/2017/03/random-pictures-33-2.jpg"
+						imgAlt="logo"
+						lorem="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis, alias neque porro nostrum est voluptatem assumenda blanditiis iusto quam quaerat nobis perferendis quidem minus at consectetur eveniet! Nihil, laborum."
+						nameButton="Api - Tragos"
+						routeButton="Portafolio/ApiTragos"
+						/>
 						
 					</div>
 				</div>

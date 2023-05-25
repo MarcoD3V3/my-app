@@ -11,6 +11,6 @@ module.exports = nextConfig
 module.exports = {
     reactStrictMode: true,
     images: {
-      domains: ['www.dumpaday.com', 'localhost', 'avataaars.io', 'cdn.pixabay.com'],
+      domains: ['www.dumpaday.com', 'localhost', 'avataaars.io', 'cdn.pixabay.com', 'picsum.photos', 'www.thecocktaildb.com'],
     },
   };
