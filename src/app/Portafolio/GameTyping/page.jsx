@@ -2,6 +2,9 @@
 import styles from './GameClicker.module.scss';
 import React, { useState, useEffect, useRef } from 'react';
 import {GameTypingLayout} from './components/layout'
+import { name } from './../../../../.next/server/app/About/page';
+
+
 
 
 export default function GameClicker() {
@@ -46,23 +49,28 @@ export default function GameClicker() {
 
   return (
     <div className={styles.GameClicker}>
-        <h1>GameClicker</h1>
-        <p>You clicked {clickCount} times</p>
-        <div className={styles.Clicker__bar} onClick={() => setClickCount(clickCount + 1)}>
+      <h1>GameClicker</h1>
+      <p>You clicked {clickCount} times</p>
+      <div className={styles.Clicker__bar} onClick={() => setClickCount(clickCount + 1)}>
           holaa
       </div>
-      <div>
-          <input 
-          id='inputNumber' 
-          type="range"
-          min="10"
-          max="100"
-          step="10"
-          ref={inputRef} />
+      <div className={styles.setTimeGame}>
+        <div className={styles.selectTime}>
+          <Input variant='filled' placeholder='Filled' />
+            <input 
+              name="rangeInputSetSecond"
+              id='inputNumber' 
+              type="range"
+              min="10"
+              max="40"
+              step="10"
+              ref={inputRef} 
+            />
           <button onClick={handleStart}>Start</button>
-          <h1>{remainingTime}</h1>
-          <div onClick={handleClick}>Hacer clic aquí</div>
+        </div>
+        <h1>{remainingTime}</h1>
+        <div onClick={handleClick}>Hacer clic aquí</div>
       </div>
-      </div>
+    </div>
   );
 }

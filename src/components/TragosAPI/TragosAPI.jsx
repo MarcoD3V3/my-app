@@ -2,6 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import styles from './TragosAPI.module.scss';
 import Image from 'next/image';
+import { PuffLoader  } from 'react-spinners';
+import { css } from '@emotion/react';
+
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
+
+
+
 
 const URL_API = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin";
 
@@ -33,7 +45,7 @@ const TragosAPI = () => {
 
   return (
     <div className={styles.TragosAPI}>
-      {loading && <h1>Cargando...</h1>}
+      {loading && <div className={styles.containerLoading}><PuffLoader className={styles.iconLoading} css={override} size={100} color={"#888"} loading={true} /></div>}
 
       {data.map(({ idDrink, strDrinkThumb, strDrink }) => (
         <div key={idDrink} className={styles.cad}>
