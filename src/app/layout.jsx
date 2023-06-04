@@ -8,10 +8,6 @@ import { CacheProvider  } from '@chakra-ui/next-js'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Home | Page',
-  description: 'Esta es una pagina personal que la utilizo para hacer pruevas de mis habilidades de desarrollador web y hacer ver mi progreso.',
-}
 
 export default function RootLayout ({ children }) {
   return (
