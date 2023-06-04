@@ -2,12 +2,26 @@
 import styles from './GameClicker.module.scss';
 import React, { useState, useEffect, useRef } from 'react';
 import {GameTypingLayout} from './components/layout'
-import { name } from './../../../../.next/server/app/About/page';
-
+import { Input } from '@chakra-ui/react';
+import {
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  Slider,
+  Flex,
+  SliderThumb,
+  NumberDecrementStepper,
+  SliderTrack,
+  SliderFilledTrack,
+} from '@chakra-ui/react'
 
 
 
 export default function GameClicker() {
+  const [value, setValue] = React.useState(0)
+  const handleChange = (value) => setValue(value)
+
   const [time, setTime] = useState(0);
   const [remainingTime, setRemainingTime] = useState(0);
   const [clickCount, setClickCount] = useState(0);
@@ -67,10 +81,32 @@ export default function GameClicker() {
               ref={inputRef} 
             />
           <button onClick={handleStart}>Start</button>
+
         </div>
         <h1>{remainingTime}</h1>
         <div onClick={handleClick}>Hacer clic aquí</div>
       </div>
+    <Flex w='70%'>
+      <NumberInput maxW='100px' mr='2rem' value={value} onChange={handleChange}>
+        <NumberInputField />
+        <NumberInputStepper>
+          <NumberIncrementStepper />
+          <NumberDecrementStepper />
+        </NumberInputStepper>
+      </NumberInput>
+      <Slider
+        color={'gray.500'}
+        flex='1'
+        focusThumbOnChange={false}
+        value={value}
+        onChange={handleChange}
+      >
+        <SliderTrack>
+          <SliderFilledTrack />
+        </SliderTrack>
+        <SliderThumb fontSize='sm' boxSize='32px' children={value} />
+      </Slider>
+    </Flex>
     </div>
   );
 }
