@@ -9,6 +9,7 @@ import { CacheProvider  } from '@chakra-ui/next-js'
 const inter = Inter({ subsets: ['latin'] })
 
 
+
 export default function RootLayout ({ children }) {
   return (
     <html lang="es">
