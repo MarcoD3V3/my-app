@@ -17,7 +17,6 @@
     "@emotion/styled": "^11.11.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
-    "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "framer-motion": "^4.1.17",
     "next": "^13.4.4-canary.6",
@@ -30,5 +29,15 @@
     "react-loading-skeleton": "^3.3.1",
     "react-spinners": "^0.13.8",
     "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.4",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2"
   }
 }

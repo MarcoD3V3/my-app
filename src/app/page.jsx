@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from './page.module.scss'
 import {QuizzersCard} from '../components/QuizzersCard/index'
 
-
 export default function Home() {
   return (
     <div className={styles.Home}>
